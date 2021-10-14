@@ -19,5 +19,10 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 
+;; Function to open init file
+(defun open-init-file ()
+  (interactive)
+  (find-file (expand-file-name "init.el" user-emacs-directory)))
+
 (provide 'init)
 ;;; init.el ends here
