@@ -20,25 +20,43 @@
 
 ;; Packages config
 (use-package evil
-  :ensure t
   :config
   (progn
     (evil-mode)
     ;; (global-evil-leader-mode)
     ;; (setq evil-leader/in-all-states t)
-    ;; (evil-leader/set-leader "SPC")
+    ;; (evil-leader/set-leader [SPC])
   ))
 
 (use-package evil-nerd-commenter
   :ensure t)
 
 (use-package evil-surround
-  :ensure t
   :config
   (global-evil-surround-mode 1))
 
-(use-package magit
-  :ensure t)
+(use-package magit)
+
+(use-package ivy
+  :diminish ivy-mode
+  :hook (after-init . ivy-mode))
+
+(use-package doom-themes
+  :init
+  (load-theme 'doom-one-light t)
+  :config
+  (doom-themes-org-config))
+
+(use-package doom-modeline
+  :hook (after-init . doom-modeline-mode)
+  :custom
+  (doom-modeline-irc nil)
+  (doom-modeline-mu4e nil)
+  (doom-modeline-gnus nil)
+  (doom-modeline-github nil)
+  (doom-modeline-persp-name nil)
+  (doom-modeline-unicode-fallback t)
+  (doom-modeline-enable-word-count nil))
 
 (provide 'init-package)
 ;;; init-package.el ends here.
