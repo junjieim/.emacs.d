@@ -4,7 +4,12 @@
   :init
   (load-theme 'doom-one-light t)
   :config
-  (doom-themes-org-config))
+  (progn
+    (setq doom-themes-enable-bold t
+	doom-themes-enable-italic t)
+    (doom-themes-org-config)
+    )
+  )
 
 (use-package all-the-icons)
 

@@ -21,5 +21,12 @@
 (global-set-key (kbd "C-c c") 'org-capture)
 (setq org-default-notes-file "~/Documents/orgs/inbox.org")
 
+(use-package org-bullets
+  :config
+  (progn
+    (setq org-bullets-bullet-list '("★" "●" "●" "●" "●"))
+    (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+    ))
+
 (provide 'init-org)
 ;;; init-org.el ends here.

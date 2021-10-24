@@ -22,11 +22,11 @@
 ;; Initialize package repos
 (require 'package)
 (setq package-archives
-      '(("gnu" . "https://elpa.gnu.org/packages/")
-        ("org" . "https://orgmode.org/elpa/")
-        ("melpa" . "https://melpa.org/packages/")
-        ("melpa-stable" . "http://stable.melpa.org/packages/"))
-      package-archive-priorities '(("melpa-stable" . 1)))
+      '(("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+        ("org" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+        ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+        ("melpa-stable" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa-stable/")
+	("marmalade" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/marmalade/")))
 (package-initialize)
 
 ;; `use-package` installation before other package init
@@ -39,10 +39,13 @@
 
 ;; config package separatly
 (require 'init-org)
-(require 'init-evil)
 (require 'init-ivy)
 (require 'init-magit)
 (require 'init-theme)
+(require 'init-undo-tree)
+(require 'init-company)
+(require 'init-which-key)
+(require 'init-evil)
 
 ;; Variables configured via the interactive 'customize' interface
 (when (file-exists-p custom-file)
