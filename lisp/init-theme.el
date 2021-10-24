@@ -6,5 +6,16 @@
   :config
   (doom-themes-org-config))
 
+(use-package all-the-icons)
+
+(use-package doom-modeline
+  :config
+  (progn
+    (setq doom-modeline-icon nil)
+    (setq doom-modeline-unicode-fallback t)
+    )
+  :hook (after-init . doom-modeline-mode)
+  )
+
 (provide 'init-theme)
 ;;; init-theme.el ends here.
