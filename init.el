@@ -41,11 +41,11 @@
 (require 'init-org)
 (require 'init-ivy)
 (require 'init-magit)
-(require 'init-theme)
 (require 'init-undo-tree)
 (require 'init-company)
 (require 'init-which-key)
 (require 'init-evil)
+(require 'init-theme)
 
 ;; Variables configured via the interactive 'customize' interface
 (when (file-exists-p custom-file)

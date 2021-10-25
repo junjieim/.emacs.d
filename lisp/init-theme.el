@@ -14,12 +14,12 @@
 (use-package all-the-icons)
 
 (use-package doom-modeline
+  :init (doom-modeline-mode 1)
   :config
   (progn
     (setq doom-modeline-icon nil)
     (setq doom-modeline-unicode-fallback t)
     )
-  :hook (after-init . doom-modeline-mode)
   )
 
 (provide 'init-theme)
