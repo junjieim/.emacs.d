@@ -24,7 +24,7 @@
 (use-package org-bullets
   :config
   (progn
-    (setq org-bullets-bullet-list '("★" "●" "●" "●" "●"))
+    (setq org-bullets-bullet-list '("●" "●" "●" "●" "●" "●" "●" "●"))
     (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
     ))
 

@@ -1,4 +1,4 @@
-* Simple Emacs comfig for non-programmer
+* Simple Emacs config for non-programmer
 ** Goal
    As a non-programmer, use Emacs to complete daily work with simple config.
 ** TODO-list
