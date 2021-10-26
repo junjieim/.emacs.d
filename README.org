@@ -1,0 +1,9 @@
+* Simple Emacs comfig for non-programmer
+** Goal
+   As a non-programmer, use Emacs to complete daily work with simple config.
+** TODO-list
+   - [X] basic emacs config: font, theme, etc.
+   - [ ] better emacs lisp mode
+   - [ ] jumping
+   - [ ] key binding
+   - [ ] org
