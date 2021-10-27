@@ -12,14 +12,13 @@
   )
 
 (use-package all-the-icons)
+(use-package all-the-icons-dired
+  :hook
+  (dired-mode . all-the-icons-dired-mode)
+  )
 
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
-  :config
-  (progn
-    (setq doom-modeline-icon nil)
-    (setq doom-modeline-unicode-fallback t)
-    )
   )
 
 (provide 'init-theme)
