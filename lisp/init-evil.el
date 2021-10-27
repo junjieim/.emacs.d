@@ -7,10 +7,19 @@
   (setq evil-move-cursor-back nil) ;; move the cursor back when exiting insert mode 
   (evil-mode 1))
 
+;; normal state keymaps
 (define-key evil-normal-state-map "i" 'evil-previous-line)
 (define-key evil-normal-state-map "j" 'evil-backward-char)
 (define-key evil-normal-state-map "k" 'evil-next-line)
 (define-key evil-normal-state-map "h" 'evil-insert)
+(define-key evil-normal-state-map "gj" 'evil-beginning-of-line)
+(define-key evil-normal-state-map "gl" 'evil-end-of-line)
+
+;; visual state keymaps
+(define-key evil-visual-state-map "i" 'evil-previous-line)
+(define-key evil-visual-state-map "j" 'evil-backward-char)
+(define-key evil-visual-state-map "k" 'evil-next-line)
+(define-key evil-visual-state-map "h" 'evil-insert)
 
 (defun my-hjkl-retation (_mode mode-keymaps &rest _rest)
   (evil-collection-translate-key 'normal mode-keymaps
