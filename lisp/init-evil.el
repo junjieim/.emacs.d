@@ -4,6 +4,7 @@
   :init
   (setq evil-want-keybinding nil)
   :config
+  (setq evil-move-cursor-back nil) ;; move the cursor back when exiting insert mode 
   (evil-mode 1))
 
 (define-key evil-normal-state-map "i" 'evil-previous-line)
@@ -23,6 +24,13 @@
   :config
   (add-hook 'evil-collection-setup-hook #'my-hjkl-retation)
   (evil-collection-init))
+
+(use-package evil-escape
+  :config
+  (setq-default evil-escape-delay 0.2)
+  (setq-default evil-escape-key-sequence "jl")
+  (evil-escape-mode 1)
+  )
 
 (use-package evil-nerd-commenter
   :ensure t)
