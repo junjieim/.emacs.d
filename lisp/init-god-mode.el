@@ -8,7 +8,7 @@
   (global-set-key (kbd "<escape>") #'god-local-mode)
   (define-key god-local-mode-map (kbd "z") #'repeat)
   (add-hook 'post-command-hook #'my-god-mode-update-cursor-type)
-  (god-mode))
+  (god-mode)
   )
 
 (provide 'init-god-mode)

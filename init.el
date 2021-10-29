@@ -45,6 +45,7 @@
 (require 'init-company)
 (require 'init-which-key)
 (require 'init-god-mode)
+(require 'init-avy)
 ;;(require 'init-evil)
 (require 'init-theme)
 
