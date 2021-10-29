@@ -44,7 +44,8 @@
 (require 'init-undo-tree)
 (require 'init-company)
 (require 'init-which-key)
-(require 'init-evil)
+(require 'init-god-mode)
+;;(require 'init-evil)
 (require 'init-theme)
 
 ;; Variables configured via the interactive 'customize' interface
